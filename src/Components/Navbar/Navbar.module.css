@@ -1,0 +1,32 @@
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+}
+.listItem{
+    font-size: 14px;
+}
+.MenuItem{    
+    font-size: 14px;
+}
+
+.listItem ul{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+}
+.listItem ul li{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+.Icon{
+    color: grey;
+    cursor: pointer;
+}
+
+
+
