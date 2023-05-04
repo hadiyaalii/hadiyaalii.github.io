@@ -84,7 +84,7 @@ function Navbar() {
                   <Portal>
                     <MenuList border="none">
                       <MenuItem className={css.MenuItem}>
-                        <Link to="https://hadiyaalii.github.io/weddings">
+                        <Link to="/weddings">
                           <Text
                             color="Gray"
                             _hover={
@@ -98,7 +98,7 @@ function Navbar() {
                         </Link>
                       </MenuItem>
                       <MenuItem className={css.MenuItem}>
-                        <Link to="https://hadiyaalii.github.io/products">
+                        <Link to="/products">
                           <Text
                             color="Gray"
                             _hover={
@@ -112,7 +112,7 @@ function Navbar() {
                         </Link>
                       </MenuItem>
                       <MenuItem className={css.MenuItem}>
-                        <Link to="https://hadiyaalii.github.io/food">
+                        <Link to="/food">
                           <Text
                             color="Gray"
                             _hover={
@@ -143,7 +143,7 @@ function Navbar() {
                   </Text>
                 </Link>
               </span>
-              <Link to="https://hadiyaalii.github.io/equipments">
+              <Link to="/equipments">
                 <Text
                   color="Gray"
                   _hover={
@@ -155,7 +155,7 @@ function Navbar() {
                   Equipments
                 </Text>
               </Link>
-              <Link to="https://hadiyaalii.github.io/testimonials">
+              <Link to="/testimonials">
                 <Text
                   color="Gray"
                   _hover={
@@ -268,13 +268,13 @@ function Navbar() {
                           </AccordionButton>
                         </h2>
                         <AccordionPanel p="0px 4px">
-                          <Link to="https://hadiyaalii.github.io/weddings">
+                          <Link to="/weddings">
                             <Text m="15px 0px">• Weddings</Text>
                           </Link>
-                          <Link to="https://hadiyaalii.github.io/products">
+                          <Link to="/products">
                             <Text mb="15px">• Brands</Text>
                           </Link>
-                          <Link to="https://hadiyaalii.github.io/food">
+                          <Link to="/food">
                             <Text mb="0px">• Food</Text>
                           </Link>
                         </AccordionPanel>
@@ -286,10 +286,10 @@ function Navbar() {
                         <Text mb="15px">About</Text>
                       </Link>
                     </span>
-                    <Link to="https://hadiyaalii.github.io/equipments">
+                    <Link to="/equipments">
                       <Text mb="15px">Equipments</Text>
                     </Link>
-                    <Link to="https://hadiyaalii.github.io/testimonials">
+                    <Link to="/testimonials">
                       <Text mb="15px">Testimonials</Text>
                     </Link>
 
