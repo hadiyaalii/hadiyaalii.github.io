@@ -83,7 +83,7 @@ function Navbar() {
                   <Portal>
                     <MenuList border="none">
                       <MenuItem className={css.MenuItem}>
-                        <a href="/weddings">
+                        <a href="https://hadiyaalii.github.io/weddings">
                           <Text
                             color="Gray"
                             _hover={
@@ -97,7 +97,7 @@ function Navbar() {
                         </a>
                       </MenuItem>
                       <MenuItem className={css.MenuItem}>
-                        <a href="/products">
+                        <a href="https://hadiyaalii.github.io/products">
                           <Text
                             color="Gray"
                             _hover={
@@ -111,7 +111,7 @@ function Navbar() {
                         </a>
                       </MenuItem>
                       <MenuItem className={css.MenuItem}>
-                        <a href="/food">
+                        <a href="https://hadiyaalii.github.io/food">
                           <Text
                             color="Gray"
                             _hover={
@@ -129,7 +129,7 @@ function Navbar() {
                 </Menu>
               </a>
               <span>
-                <a href="/about">
+                <a href="https://hadiyaalii.github.io/about">
                   <Text
                     color="Gray"
                     _hover={
@@ -142,7 +142,7 @@ function Navbar() {
                   </Text>
                 </a>
               </span>
-              <a href="/equipments">
+              <a href="https://hadiyaalii.github.io/equipments">
                 <Text
                   color="Gray"
                   _hover={
@@ -154,7 +154,7 @@ function Navbar() {
                   Equipments
                 </Text>
               </a>
-              <a href="/testimonials">
+              <a href="https://hadiyaalii.github.io/testimonials">
                 <Text
                   color="Gray"
                   _hover={
@@ -268,13 +268,13 @@ function Navbar() {
                         </h2>
                         <AccordionPanel p="0px 4px">
                           <a href="#">
-                            <a href="/weddings">
+                            <a href="https://hadiyaalii.github.io/weddings">
                               <Text m="15px 0px">• Weddings</Text>
                             </a>
-                            <a href="/products">
+                            <a href="https://hadiyaalii.github.io/products">
                               <Text mb="15px">• Brands</Text>
                             </a>
-                            <a href="/food">
+                            <a href="https://hadiyaalii.github.io/food">
                               <Text mb="0px">• Food</Text>
                             </a>
                           </a>
@@ -283,14 +283,14 @@ function Navbar() {
                     </Accordion>
 
                     <span>
-                      <a href="/about">
+                      <a href="https://hadiyaalii.github.io/about">
                         <Text mb="15px">About</Text>
                       </a>
                     </span>
-                    <a href="/equipments">
+                    <a href="https://hadiyaalii.github.io/equipments">
                       <Text mb="15px">Equipments</Text>
                     </a>
-                    <a href="/testimonials">
+                    <a href="https://hadiyaalii.github.io/testimonials">
                       <Text mb="15px">Testimonials</Text>
                     </a>
 
