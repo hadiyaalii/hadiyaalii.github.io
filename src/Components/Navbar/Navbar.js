@@ -36,6 +36,7 @@ import { BsWhatsapp, BsMoon } from "react-icons/bs";
 import { MdSunny } from "react-icons/md";
 import LogoDark from "../../assets/Logo/logoDark.png";
 import LogoWhite from "../../assets/Logo/logoWhite.png";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -56,7 +57,7 @@ function Navbar() {
         {isDesktop ? (
           <div className={css.listItem}>
             <ul>
-              <a href="/">
+              <Link to="/">
                 <Text
                   color="Gray"
                   _hover={
@@ -67,8 +68,8 @@ function Navbar() {
                 >
                   Home
                 </Text>
-              </a>
-              <a href="#">
+              </Link>
+              <Link to="#">
                 <Menu>
                   <MenuButton
                     color="Gray"
@@ -83,7 +84,7 @@ function Navbar() {
                   <Portal>
                     <MenuList border="none">
                       <MenuItem className={css.MenuItem}>
-                        <a href="https://hadiyaalii.github.io/weddings">
+                        <Link to="https://hadiyaalii.github.io/weddings">
                           <Text
                             color="Gray"
                             _hover={
@@ -94,10 +95,10 @@ function Navbar() {
                           >
                             Weddings
                           </Text>
-                        </a>
+                        </Link>
                       </MenuItem>
                       <MenuItem className={css.MenuItem}>
-                        <a href="https://hadiyaalii.github.io/products">
+                        <Link to="https://hadiyaalii.github.io/products">
                           <Text
                             color="Gray"
                             _hover={
@@ -108,10 +109,10 @@ function Navbar() {
                           >
                             Brands
                           </Text>
-                        </a>
+                        </Link>
                       </MenuItem>
                       <MenuItem className={css.MenuItem}>
-                        <a href="https://hadiyaalii.github.io/food">
+                        <Link to="https://hadiyaalii.github.io/food">
                           <Text
                             color="Gray"
                             _hover={
@@ -122,14 +123,14 @@ function Navbar() {
                           >
                             Food
                           </Text>
-                        </a>
+                        </Link>
                       </MenuItem>
                     </MenuList>
                   </Portal>
                 </Menu>
-              </a>
+              </Link>
               <span>
-                <a href="https://hadiyaalii.github.io/about">
+                <Link to="/about">
                   <Text
                     color="Gray"
                     _hover={
@@ -140,9 +141,9 @@ function Navbar() {
                   >
                     About
                   </Text>
-                </a>
+                </Link>
               </span>
-              <a href="https://hadiyaalii.github.io/equipments">
+              <Link to="https://hadiyaalii.github.io/equipments">
                 <Text
                   color="Gray"
                   _hover={
@@ -153,8 +154,8 @@ function Navbar() {
                 >
                   Equipments
                 </Text>
-              </a>
-              <a href="https://hadiyaalii.github.io/testimonials">
+              </Link>
+              <Link to="https://hadiyaalii.github.io/testimonials">
                 <Text
                   color="Gray"
                   _hover={
@@ -165,7 +166,7 @@ function Navbar() {
                 >
                   Testimonials
                 </Text>
-              </a>
+              </Link>
               <Box
                 color="Gray"
                 _hover={
@@ -251,9 +252,9 @@ function Navbar() {
                 <DrawerOverlay />
                 <DrawerContent p="25px">
                   <ul>
-                    <a href="/">
+                    <Link to="/">
                       <Text mb="15px">Home</Text>
-                    </a>
+                    </Link>
                     <Accordion
                       mb="15px"
                       border="0px solid transparent"
@@ -267,32 +268,30 @@ function Navbar() {
                           </AccordionButton>
                         </h2>
                         <AccordionPanel p="0px 4px">
-                          <a href="#">
-                            <a href="https://hadiyaalii.github.io/weddings">
-                              <Text m="15px 0px">• Weddings</Text>
-                            </a>
-                            <a href="https://hadiyaalii.github.io/products">
-                              <Text mb="15px">• Brands</Text>
-                            </a>
-                            <a href="https://hadiyaalii.github.io/food">
-                              <Text mb="0px">• Food</Text>
-                            </a>
-                          </a>
+                          <Link to="https://hadiyaalii.github.io/weddings">
+                            <Text m="15px 0px">• Weddings</Text>
+                          </Link>
+                          <Link to="https://hadiyaalii.github.io/products">
+                            <Text mb="15px">• Brands</Text>
+                          </Link>
+                          <Link to="https://hadiyaalii.github.io/food">
+                            <Text mb="0px">• Food</Text>
+                          </Link>
                         </AccordionPanel>
                       </AccordionItem>
                     </Accordion>
 
                     <span>
-                      <a href="https://hadiyaalii.github.io/about">
+                      <Link to="/about">
                         <Text mb="15px">About</Text>
-                      </a>
+                      </Link>
                     </span>
-                    <a href="https://hadiyaalii.github.io/equipments">
+                    <Link to="https://hadiyaalii.github.io/equipments">
                       <Text mb="15px">Equipments</Text>
-                    </a>
-                    <a href="https://hadiyaalii.github.io/testimonials">
+                    </Link>
+                    <Link to="https://hadiyaalii.github.io/testimonials">
                       <Text mb="15px">Testimonials</Text>
-                    </a>
+                    </Link>
 
                     <Box
                       display="flex"

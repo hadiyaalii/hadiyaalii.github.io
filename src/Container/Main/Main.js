@@ -8,39 +8,24 @@ import Products from "../../Components/Products/Products";
 import Food from "../../Components/Food/Food";
 import Equipments from "../../Components/Equipements/Equipments";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import { Route, Routes } from "react-router-dom";
 
 function Main() {
-  let component;
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home />;
-      break;
-    case "/weddings":
-      component = <Weddings />;
-      break;
-    case "/products":
-      component = <Products />;
-      break;
-    case "/food":
-      component = <Food />;
-      break;
-    case "/about":
-      component = <About />;
-      break;
-    case "/equipments":
-      component = <Equipments />;
-      break;
-    case "/contact":
-      component = <Contact />;
-      break;
-    case "/testimonials":
-      component = <Testimonials />;
-      break;
-  }
   return (
     <div>
       <Navbar />
-      {component}
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/weddings" element={<Weddings />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/food" element={<Food />} />
+          <Route path="/equipments" element={<Equipments />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+        </Routes>
+      </div>
     </div>
   );
 }
