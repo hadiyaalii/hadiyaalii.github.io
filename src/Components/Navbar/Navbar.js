@@ -143,7 +143,7 @@ function Navbar() {
                   </Text>
                 </Link>
               </span>
-              <Link to="https://hadiyaalii.github.io/equipments">
+              <Link to="/equipments">
                 <Text
                   color="Gray"
                   _hover={
