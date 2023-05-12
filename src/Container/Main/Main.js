@@ -9,22 +9,27 @@ import Food from "../../Components/Food/Food";
 import Equipments from "../../Components/Equipements/Equipments";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import { Route, Routes } from "react-router-dom";
+import Loading from "../../Components/LoadingAnimation/Loading";
 
-function Main() {
+function Main({ isLoading }) {
   return (
     <div>
       <Navbar />
       <div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/weddings" element={<Weddings />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/food" element={<Food />} />
-          <Route path="/equipments" element={<Equipments />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-        </Routes>
+        {isLoading ? (
+          <Loading />
+        ) : (
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/weddings" element={<Weddings />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/food" element={<Food />} />
+            <Route path="/equipments" element={<Equipments />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+          </Routes>
+        )}
       </div>
     </div>
   );
