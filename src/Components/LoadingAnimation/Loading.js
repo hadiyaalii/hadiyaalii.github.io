@@ -13,7 +13,7 @@ function Loading() {
       setTimeout(() => {
         setBarWidth(150);
       }, 7000);
-    }, 800);
+    }, 8000);
     setTimeout(() => {
       setBarWidth(window.innerWidth);
     }, 7400);
